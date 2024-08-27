@@ -1,0 +1,39 @@
+{
+  "name": "@hyperplay/browser-sdk",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codecheck": "tsc --noEmit",
+    "prettier": "prettier --check .",
+    "prettier-fix": "prettier --write .",
+    "test": "hardhat compile && hardhat test",
+    "coverage": "nyc npm run test",
+    "build": "vite build",
+    "lint": "export ESLINT_USE_FLAT_CONFIG=false && eslint --ext .js,.jsx,.ts,.tsx,.json,.mdx ./src"
+  },
+  "files": [
+    "dist/*",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^4.0.3"
+  }
+}
