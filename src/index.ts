@@ -55,7 +55,7 @@ function makeElementFullScreenWindow(elementId: string) {
   element.style.setProperty('overflow', 'hidden')
 }
 
-function isRenderedInHyperPlayAsIframe() {
+function isRenderedInNovaPlayAsIframe() {
   return window.self !== window.top
 }
 
@@ -66,7 +66,7 @@ export function requestFullscreen({
   elementId: string
   setStyle?: boolean
 }) {
-  if (!isRenderedInHyperPlayAsIframe()) {
+  if (!isRenderedInNovaPlayAsIframe()) {
     const element = document.getElementById(elementId)
     if (element === null) {
       console.error('no element with element id ', elementId, ' exists')

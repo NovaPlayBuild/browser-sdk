@@ -1,6 +1,6 @@
-# HyperPlay Browser SDK
+# NovaPlay Browser SDK
 
-SDK for browser projects integrating with HyperPlay's Browser Platform.
+SDK for browser projects integrating with NovaPlay's Browser Platform.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install @hyperplay/browser-sdk
 
 # Integration
 
-The following code snippet can be tested with the [browser-sdk-demo project](https://github.com/HyperPlay-Gaming/browser-sdk-demo).
+The following code snippet can be tested with the [browser-sdk-demo project](https://github.com/NovaPlay-Gaming/browser-sdk-demo).
 
 ```tsx
 import { requestFullscreen } from '@hyperplay/browser-sdk'
@@ -22,4 +22,4 @@ import { requestFullscreen } from '@hyperplay/browser-sdk'
   <div id="gameCanvas">Some Content</div>
 ```
 
-Note that `requestFullscreen` will call `Element.requestFullscreen` by default if your project is not being rendered in the HyperPlay Store.
+Note that `requestFullscreen` will call `Element.requestFullscreen` by default if your project is not being rendered in the NovaPlay Store.
