@@ -9,7 +9,7 @@ interface FullscreenStyleProps {
   border: string
   overflow: string
 }
-
+}
 // key is elementId
 const elementStylePrevValues: Record<string, FullscreenStyleProps> = {}
 
