@@ -5,7 +5,7 @@ SDK for browser projects integrating with NovaPlay's Browser Platform.
 ## Installation
 
 ```bash
-npm install @hyperplay/browser-sdk
+npm install @novaplay/browser-sdk
 ```
 
 # Integration
@@ -13,7 +13,7 @@ npm install @hyperplay/browser-sdk
 The following code snippet can be tested with the [browser-sdk-demo project](https://github.com/NovaPlay-Gaming/browser-sdk-demo).
 
 ```tsx
-import { requestFullscreen } from '@hyperplay/browser-sdk'
+import { requestFullscreen } from '@novaplay/browser-sdk'
 
 ...
 
